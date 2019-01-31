@@ -26,8 +26,6 @@ body, html {
   flex-direction: row;
   align-content: space-around;
   text-align: center;
-  
-
 }
 
 
@@ -243,54 +241,6 @@ p.end-2{
 
 }
 
-/*p.end-2{
-	color: white;
-	align-items: left;
-	font-size: 15px;
-	text-align: left;
-	font-family: garamond;
-	position: fixed;
-	bottom: 145px;
-	left: 5px;
-}
-p.end-3{
-	color: white;
-	align-items: left;
-	font-size: 15px;
-	text-align: left;
-	font-family: garamond;
-	position: fixed;
-	bottom: 90px;
-	left: 5px;
-}
-p.end-4{
-	color: gray;
-	align-items: left;
-	font-size: 15px;
-	text-align: left;
-	font-family: garamond;
-	position: fixed;
-	bottom: 30px;
-	left: 5px;
-}
-p.end-5{
-	color: gray;
-	align-items: left;
-	font-size: 15px;
-	text-align: left;
-	font-family: garamond;
-	position: fixed;
-	bottom: 10px;
-	left: 5px;
-}*/
-
-
-/*most-loved{
-
-width: 25%;
-padding: 14px;
-
-}*/
 
 img.cart{
 
@@ -338,10 +288,89 @@ position: relative;
 
 @media screen and (min-width: 600px) {
 
+.category-flex {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.category-cell {
+	height: 200px;
+	background-size: 100%;
+	color: #fff;
+
+}
+
+.category-cell:first-child,
+.category-cell:last-child {
+	flex: 0 1 50%;
+	width: 50%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* These will share the same, 
+trends, glasses, sales and bags */
+
+.category-cell:nth-child(2),
+.category-cell:nth-child(3),
+.category-cell:nth-child(4),
+.category-cell:nth-child(5) {
+	flex: 0 1 25%;
+	width: 25%;
+}
+.category-cell:first-child {
+	background-image: url('images/mens-category.jpg');
+	background-size: cover;
+	order: 1;
+	text-align: center;
+    font-size: 30;
+}
+
+.category-cell:nth-child(2) {
+	background-image: url('images/trends-category.jpg');
+	background-size: cover;
+	order: 2;
+	text-align: center;
+    font-size: 30;
+}
+.category-cell:nth-child(3) {
+	background-image: url('images/glasses-category.jpg');
+	background-size: cover;
+	order: 3;
+	text-align: center;
+    font-size: 30;
+}
+
+.category-cell:nth-child(4) {
+	background-image: url('images/sale-category.jpg');
+	background-size: cover;
+	order: 4;
+	text-align: center;
+    font-size: 30;
+}
+
+.category-cell:nth-child(5) {
+	background-image: url('images/bags-category.jpg');
+	background-size: cover;
+	order: 5;
+	text-align: center;
+    font-size: 30;	
+}
+
+.category-cell:last-child {
+	background-image: url('images/womens-category.jpg');
+	background-size: cover;
+	order: 6;
+	text-align: center;
+    font-size: 30;
+}
+
 
 }
 
 @media screen and (min-width: 1240px) {
+
 
 
 }
